@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="main.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,6 +15,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#product">Products</a></li>
             <li><a href="about.html">About</a></li>
+            <li id = 'cartLink'><a href="cart.html">Cart</a></li>
         </ul>  
     </nav>
     <div class = "producthead"> 
@@ -37,21 +39,21 @@
 
         <div class="product-item info">
             <h2>The Original</h2>
-            <h6>20inx20in / $40</h6>
+            <h6 id = "price1">20x20in / Price:$60</h6>
             <h4> The most reviewed pillow on the Internet. Medium firm, breathable, and adjusts to your unique size and position for deep, restful sleep.</h4>
-            <h3>Color</h3>
-            <div class="color c1"></div>
-            <div class="color c2"></div>
-            <div class="color c3"></div>
-            <div class="color c4"></div>
+            <h3 id="colorName">Color</h3>
+            <div class="color c1" id = "white" onclick = "border(white)" value = "After School Special"></div>
+            <div class="color c2" id = "yellow" onclick = "border(yellow)" value = "Rainy Day"></div>
+            <div class="color c3" id = "brown" onclick = "border(brown)" value = "Morning Haze" ></div>
+            <div class="color c4" id = "orange" onclick = "border(orange)" value = "Light Orange"></div>
             <div class="clear"></div>
             <h3>Foam</h3>
-            <select>
-                <option value="volvo">Duck Down</option>
-                <option value="saab">Memory Foam </option>
-                <option value="opel">Hypoallergenic Poly-blend</option>
+            <select id="foamOptions" onchange="selectChange()">
+                <option selected="selected" value = "$60">Duck Down</option>
+                <option value = "$50">Memory Foam </option>
+                <option value = "$30">Hypoallergenic Poly-blend</option>
             </select>
-            <div id="addbox">
+            <div id="addbox" onclick ="newPillow()">
                 <h3>Add to Cart</h3>
             </div>
         </div>
@@ -109,5 +111,6 @@
     <p> &copy; Fluff Stuff</p> 
     <p class = "location">United States</p>
 </footer>
+
 
 </html>
