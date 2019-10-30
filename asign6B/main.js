@@ -53,7 +53,7 @@ function newPillow(){
 
 // function for updating the cart numbers 
 function updateCartNum(){
-    if(localStorage('Pillow')!= null){
+    if(localStorage.getItem('Pillow') != null){
         var cartText = String("Cart " + JSON.parse(localStorage.getItem('Pillow')).length)
         document.getElementsByClassName('cartLink')[0].getElementsByTagName('a')[0].innerHTML = cartText
     }
