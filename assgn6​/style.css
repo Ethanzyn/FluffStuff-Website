@@ -435,7 +435,7 @@ select{
 
 }
 
-#cartLink{
+.cartLink{
     position: aboslute;
     float:right;
 
@@ -443,6 +443,12 @@ select{
 }
 
 .cart-container {
+
+    display: grid;
+    grid-template-columns: 30% 20% 20% 10% 10% 10%;
+  }
+
+  .cart-header {
 
     display: grid;
     grid-template-columns: 30% 20% 20% 10% 15% 5%;
@@ -457,6 +463,16 @@ select{
     
   }
 
+  .cart-name {
+    position: relative;
+    padding: 40px;
+    padding-bottom: 0px;
+    font-size: 16px;
+    text-align: left;
+    height:30px;
+    
+  }
+
   .cartContent{
     position:absolute;
     margin: auto;
@@ -468,8 +484,8 @@ select{
 
 .cart-item img{
     display: block;
-    max-height:60%; 
-    max-width:60%;
+    max-height:40%; 
+    max-width:40%;
     margin-left: 10px;
     margin-right: auto;
     margin-bottom: auto;
@@ -519,6 +535,20 @@ select{
     margin: 18px;
 }
 
+.removeButton{
+    position: relative;
+    padding: 0px;
+    font-size: 20px;
+    text-align: left;
+    height:150px
+
+}
+
+button{
+
+    width: 70px;
+    height: 36px;
+}
 
 
 
