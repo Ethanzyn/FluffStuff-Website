@@ -15,7 +15,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#product">Products</a></li>
             <li><a href="about.html">About</a></li>
-            <li id = 'cartLink'><a href="cart.html">Cart</a></li>
+            <li class = 'cartLink' ><a href="cart.html">Cart</a></li>
         </ul>  
     </nav>
     <div class = "producthead"> 
@@ -23,10 +23,7 @@
     </div>
 </header>
 
-<body>
-
-
-    
+<body onload="updateCartNum()">
     <div class="fullproduct">
         <div class="product-item">
             <img src="thumbnail1.png" alt="thumbnail">
@@ -62,7 +59,7 @@
     <h2 id="more">More you may like</h2>
     <div class="grid-container1">
             <a href="SpecificProduct.html"><div class="grid-item1 section2">
-                <div class="productImg1"><img src="pillow1.png" alt="bedpilow"></div>
+                <div class="productImg1"><img id = 'imageLink' value='pillow1.png' src="pillow1.png" alt="bedpilow"></div>
                 <div class="productInfo">
                     <h4>The Original</h4>
                     <h5> Medium firm, breathable, and adjusts to your unique size and position for deep, restful sleep.</h5>
